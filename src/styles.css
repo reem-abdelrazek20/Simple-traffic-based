@@ -1,0 +1,107 @@
+body {
+  background-image: url(img/bg-pattern.svg);
+
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-area {
+  background-image: url(img/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 50px;
+}
+.p {
+  text-align: center;
+}
+/* .d-flex {
+  display: flex;
+  justify-content: space-evenly;
+} */
+.box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+/* شريط التمرير */
+
+.custom-range {
+  -webkit-appearance: none; /* إزالة التنسيق الافتراضي للمتصفحات */
+  appearance: none;
+  width: 100%; /* عرض الشريط */
+  height: 8px; /* ارتفاع الشريط */
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: gray;
+}
+
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* إزالة التنسيق الافتراضي */
+  appearance: none;
+  width: 30px; /* حجم الدائرة */
+  height: 30px; /* ارتفاع الدائرة */
+  background: aqua; /* لون الدائرة */
+  border: 2px solid white; /* حدود بيضاء حول الدائرة */
+  border-radius: 50%; /* جعل الدائرة شكل دائري */
+  cursor: pointer; /* تغيير المؤشر عند السحب */
+  transition: background 0.3s; /* تأثير عند التغيير */
+}
+
+.custom-range::-webkit-slider-thumb:hover {
+  box-shadow: 1px 1px 9px aqua; /* تغيير اللون إلى البرتقالي عند التمرير */
+}
+.toggel {
+  padding: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  border: 0;
+  width: 60px;
+  height: 25px;
+  border-radius: 999px;
+  background-color: gray;
+  position: relative;
+}
+.toggel .div {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 999px;
+  left: 4px;
+  top: 4px;
+}
+.ac {
+  background-color: aqua;
+}
+.toggel .active {
+  left: calc(100% - 4px);
+  transform: translateX(-100%);
+}
+ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+ul li {
+  margin: 10px;
+  color: hsl(227, 35%, 25%);
+}
+img {
+  margin-right: 10px;
+}
+.buttonn {
+  background-color: hsl(227, 35%, 25%);
+  border: none;
+  border-radius: 999px;
+  color: aliceblue;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+}
