@@ -1,5 +1,5 @@
 body {
-  background-image:  url('/img/bg-pattern.svg');
+  background-image:  url(/public/img/bg-pattern.svg);
 
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -9,7 +9,7 @@ body {
 }
 
 .top-area {
-  background-image:url('/img/pattern-circles.svg');
+  background-image:url(/public/img/pattern-circles.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
